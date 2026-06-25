@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+
+<meta name="keywords" content="psicóloga, psicóloga para mulheres, ansiedade feminina, terapia online, autoestima, relacionamento, depressão, adolescentes, crise de ansiedade">
+<meta name="author" content="Kelly Souza">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Psicóloga especializada em ansiedade feminina, autoestima e relacionamentos. Atendimento online acolhedor e humanizado.">
+<title>Psicóloga para mulheres | Atendimento online</title>
+<link rel="shortcut icon" href="IMAGENS/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="CSS/bootstrap.min.css">
+
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+
+html{ 
+    scroll-behavior:smooth;
+    scroll-padding: 45px;
+ }
+
+.WRAPPER{
+width:100%;
+background:#f3f3f3;
+ 
+
+}
+
+/* HEADER (LOGO + MENU LADO A LADO) */
+.header{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:0px 5%;
+  background-color:#30b8b8;
+  
+  padding-top: 10px;
+  position:sticky; /*fica fixo*/
+  top:0;
+  z-index:1000;
+  
+  
+  
+ 
+}
+
+.tamanhologo{
+  width:50px;
+  max-width:50%;
+}
+
+section{
+    width: 100%;
+    min-height: 100vh;
+    padding:40px 20px;
+}
+
+
+/* MENU ESTILO ORIGINAL COM EFEITO */
+.menu ul{
+  display:flex;
+  gap:30px;
+  list-style:none;
+  font-family: 'Montserrat', 'Playfair Display', serif;
+}
+ 
+
+
+.menu a{
+  color:white;
+  text-decoration:none;
+  font: size 1.3e m;;
+  position:relative;
+  padding:5px 0;
+  transition:.3s;
+  letter-spacing: 2px;
+  
+}
+
+.menu a::after{
+  content:"";
+  position:absolute;
+  left:0;
+  bottom:-5px;
+  width:0;
+  height:3px;
+  background-color: #00fefe;
+  transition:.4s;
+  border-radius:10px;
+}
+
+.menu a:hover{ color:#00fefe; }
+.menu a:hover::after{ width:100%; }
+
+
+
+/* CARDS */
+
+
+#COMECO{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:20px;
+  padding-top: 2%;
+ 
+  
+  
+}
+#TRATAMENTOS{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:0px;
+ 
+  
+  
+}
+.essencia{
+  font-family: 'Montserrat', 'Playfair Display', serif;
+  
+}
+
+.boxcard{
+  width:22%;
+  height:350px;
+  min-width:260px;
+  background-color: #ffffff;
+  border-radius:20px;
+  padding:1%;
+  margin: 1%;
+  box-shadow:0 2px 10px rgba(0,0,0,.2);
+  text-align: center;
+}
+
+.tamanhoimg{
+  width:20%;
+  height:auto;
+  border-radius:15px;
+}
+
+h1{
+  font-size:1.7rem;
+  margin-top:10px;
+  font-family: 'Playfair Display', serif;
+  padding-bottom: 1%;
+  text-align: center;
+  color: #000000;
+  letter-spacing: 5px;
+}
+
+h2{
+  font-size:1.5rem;
+  margin-top:10px;
+  font-family: 'Montserrat', 'Playfair Display', serif;
+  padding-bottom: 1%;
+  text-align: center;
+  color: #000000;
+  letter-spacing: 5px;
+  padding-bottom: 50px;
+}
+p{
+   font-size:1.rem;
+   font-family: 'Poppins', sans-serif;
+   letter-spacing: 5%;
+   line-height: 150%;
+   text-align: center;
+   padding-bottom: 1%;
+ }
+
+ .psobremim{
+    font-size:1.rem;
+   font-family: 'Poppins', sans-serif;
+   letter-spacing: 5%;
+   line-height: 150%;
+   text-align: justify;
+   padding-bottom: 1%;
+
+ }
+ 
+
+
+
+/* SOBRE */
+#MEIO{
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  justify-content:center;
+  gap:20px;
+  background:#ffffff
+  
+ 
+}
+
+.boxfoto{ width:40%; min-width:280px; }
+.boxtexto{ width:50%; min-width:280px; }
+.tamanhofotopsiq{ width:100%; }
+
+/* FORM */
+form{
+  width:50%;
+  min-width:280px;
+  margin:auto;
+  background-color: rgb(231, 236, 238);
+  padding:80px;
+  border-radius:20px;
+  font-family: 'Poppins', sans-serif;
+  
+  
+
+}
+
+input, textarea{
+  width:100%;
+  margin-bottom:10px;
+  padding:10px;
+  border:none;
+  border-bottom:2px solid #888;
+  border-radius:8px;
+  background-color: rgb(235, 239, 239);
+  color: #000000;
+  font-family: 'Poppins', sans-serif;
+  
+}
+::placeholder{
+  color: #000000;
+}
+
+.botaoFormulario{
+  background:#0997b1;
+  color:white;
+  width:30%;
+  padding:10px;
+  border:none;
+  border-radius: 20px;
+}
+
+
+.tamanhofotopsiq{
+  width: 100%;
+}
+
+
+
+/*css do hamburger MOBILE*/
+
+.hamburger {
+  display: none;
+  font-size: 30px;
+ font-family: 'Poppins', sans-serif;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+ 
+}
+
+
+.zoom {
+  transition: transform 0.3s ease; /* Suaviza o efeito */
+  border-style: groove;
+  border-color: #ffffff;
+  color: #000000;
+  
+  background-color: #ffffff;
+  
+            
+}
+
+.zoom:hover {
+  transform: scale(1.1); /* Aumenta 20% */
+  opacity: 0.9;
+  color: #000000;
+  background-color: rgb(255, 255, 255);
+ border-style: groove;
+ border-color:#17dbdb
+}
+
+
+
+
+
+/* BANNER ROTATIVO */
+
+
+#COMECO{
+          
+          width: 100%;
+          height: 800px;
+          background-image: url('./IMAGENS/BANNER1.jpg'); /* imagem inicial */
+          background-size: cover; /*ajusta o tamanho da imagem de fundo para garantir que ela cubra completamente o elemento, mesmo que isso signifique cortar partes da imagem*/
+          background-position: center;
+          transition: background-image 0.5s ease-in-out;
+                
+         /*formatando o texto sobre o banner */
+        font-size: 2.8em;
+        color: rgb(26, 25, 25);  
+        padding-top: 200px;
+                   
+        text-align: center;        /* Centralizar texto */
+        font-family: 'Poppins', sans-serif;
+ 
+        
+          
+          
+        }
+
+  #COMECO:hover {
+   background-image: url('./IMAGENS/BANNER2.jpg'); /* imagem ao passar o mouse */
+          
+        
+
+        }
+
+.titulobanner{
+  font-size: 1.2em;
+  font-family: Arial Black, Helvetica, sans-serif, serif;
+  color: #f3f3f3;
+  text-align: left;
+  padding-left:0px;
+
+}    
+
+.botaoconsulta{
+  display:flex;
+  flex-wrap:wrap;
+  
+  justify-content:center;
+  width: 100%;
+  padding-top: 0;
+  
+  
+}
+
+/* FINALIZA AQUI */
+
+/* botao com florzinha
+
+.home {
+  content: "🌷";
+  margin-right: 6px;
+}
+
+
+.home::before {
+  content: "🌸";
+  margin-right: 6px;
+  color: #f472b6;
+  font-size: 16px;
+}
+
+*/
+
+
+/* MOBILE */
+
+@media (max-width:768px){
+
+  .menu ul{
+    flex-direction:column;
+    gap:10px;
+    text-align: center;
+    
+  }
+
+  .boxcard{
+     width:90%;
+     padding: 2%;
+     margin: 5%;
+       
+    
+    }
+
+  #MEIO{ flex-direction:column; }
+
+  .boxfoto, .boxtexto{ width:100%; }
+
+  form{ 
+    width:100%; 
+    padding: 1%;
+    background-color: rgb(255, 255, 255);
+  }
+
+input, textarea{
+  width:100%;
+  margin-bottom:10px;
+  padding:10px;
+  border:none;
+  border-bottom:2px solid #888;
+  border-radius:8px;
+  background-color: rgb(235, 239, 239);
+  color: #7c7c7c;
+  
+}
+
+  .header {
+    flex-direction: row;
+    align-items: center;
+    position: sticky;
+    border-radius: 0px;
+  }
+
+  .hamburger {
+    display: block;
+    color: rgb(255, 255, 255);
+  }
+
+  .menu {
+    position: absolute;
+    top: 100%;   /*  GRUDA EXATAMENTE ABAIXO DO HEADER */
+    right: 0;
+    width: 100%;
+    display: none;
+    background-color:#30b8b8;
+    z-index: 1000;
+    /* opacity: 0.5; */
+    width: 100%;
+    
+  }
+
+  .menu.ativo {
+    display: block;
+  }
+
+  .menu ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+  }
+  
+.titulobanner{
+  font-size: 0.9em;
+  font-family: Arial Black, Helvetica, sans-serif, serif;
+  color: #f3f3f3;
+  text-align: center;
+  padding-left:0px;
+
+} 
+
+
+.essencia{
+  font-family: 'Playfair Display', serif;
+}
+
+}
+/*TERMINA AQUI*/
+
+
+
+
+
+
+</style>
+
+</head>
+
+<body>
+
+<div class="WRAPPER">
+
+
+
+<div class="header shadow-lg ">
+  
+  <img src="IMAGENS/logo.png" class="tamanhologo">
+
+<div class="hamburger">☰</div>
+
+  <div class="menu" id="menu">
+    <ul>
+      <li><a href="#COMECO" class="fa-solid fa-house"> &nbsp;Home  </a></li>
+      <li><a href="#TRATAMENTOS" class="fa-solid fa-heart"> &nbsp;Especialidades  </a></li>
+      <li><a href="#MEIO" class="fa-solid fa-user"> &nbsp;Sobre mim</a></li>
+      <li><a href="#FIM" class="fa-solid fa-comment"> &nbsp;Contato</a></li>
+
+     
+
+
+    </ul>
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+<section id="COMECO">
+
+<div class="boxBannerRotativo">
+  <p class="titulobanner"> UM ESPAÇO SEGURO <br>
+    <span class="essencia">para ser você!</span> </p>
+
+    
+</div>
+
+ <div class="botaoconsulta">
+ <a href="#FIM"> <button type="button" class="btn btn-warning">Agende sua sessão</button></a>
+</div>
+ </section> 
+
+
+
+ <section id="TRATAMENTOS">
+
+<div class="boxcard zoom">
+  <img src="IMAGENS/PANICOICONE.png" class="tamanhoimg" alt="ilustração de crise de pânico">
+  <h1>Crise de Pânico</h1>
+  <p>Uma sensação intensa de medo que surge de repente, com sintomas físicos e emocionais. </p>
+</div>
+
+<div class="boxcard zoom">
+  <img src="IMAGENS/DEPRESSAOICONE.png" class="tamanhoimg" alt="Ilustração de depressão">
+  <h1>Depressão</h1>
+  <p>Mais do que tristeza, é um cansaço emocional.  Com acolhimento e apoio, é possível reencontrar sentido e leveza</p>
+</div>
+
+<div class="boxcard zoom">
+  <img src="IMAGENS/ANSIEDADEICONE.png" class="tamanhoimg" alt="Ilustraçao de ansiedade">
+  <h1>Ansiedade</h1>
+  <p>Uma inquietação constante que pode causar preocupação excessiva e tensão. Com apoio adequado, é possível encontrar calma </p>
+</div>
+
+ <div class="boxcard zoom">
+               
+  <img src="IMAGENS/AUTOESTIMAICONE.png"  class="tamanhoimg" alt="Ilustração de relacionamento">
+   <h1>Autoestima</h1>
+   <p> Conflitos, inseguranças e dificuldades na comunicação são mais comuns do que parecem, mas não precisam ser permanentes</p>
+</div>
+
+<!-- segundo bloco -->
+
+ <div class="boxcard zoom">
+               
+  <img src="IMAGENS/BURNOUTICONE.png"  class="tamanhoimg" alt="Ilustração de relacionamento">
+   <h1>Burnout</h1>
+   <p> esgotamento profundo, emocional e mental, causado por excesso de demandas e falta de cuidado consigo mesma</p>
+</div>
+
+ <div class="boxcard zoom">
+               
+  <img src="IMAGENS/ESTRESSICONE.png"  class="tamanhoimg" alt="Ilustração de relacionamento">
+   <h1>Estresse</h1>
+   <p> 
+    Resposta  do organismo diante de pressões do dia a dia. Mas, quando se torna constante, pode afetar sua saúde emocional e física</p>
+</div>
+
+ <div class="boxcard zoom">
+               
+  <img src="IMAGENS/FOBIAICONE.png"  class="tamanhoimg" alt="Ilustração de relacionamento">
+   <h1>Fobia</h1>
+   <p> Medo intenso e desproporcional diante de situações, que muitas vezes, não representam perigo real — mas são vividos como se fossem</p>
+</div>
+
+ <div class="boxcard zoom">
+               
+  <img src="IMAGENS/TERMINOICONE.png"  class="tamanhoimg" alt="Ilustração de relacionamento">
+   <h1>Término</h1>
+   <p>O término de um relacionamento pode despertar uma mistura intensa de emoções. Aprenda reconstruir sua própria história</p>
+</div>
+
+
+
+
+</section>
+
+<section id="MEIO">
+<div class="boxfoto">
+<img src="IMAGENS/FOTOCATIA.png" class="tamanhofotopsiq" alt="Foto da psicóloga">
+</div>
+
+<div class="boxtexto">
+<h1>CÁTIA PEREIRA DE SOUZA</h1>
+<h2>Psicóloga e neuropsicóloga</h2>
+
+<p class="psobremim">
+Sou psicóloga formada em Psicologia, com atuação voltada ao cuidado da saúde mental feminina. Minha prática é fundamentada em Terapia Cognitivo-Comportamental (TCC), Psicanálise, Humanista, etc., sempre baseada em técnicas reconhecidas cientificamente e no respeito às necessidades individuais de cada paciente.
+</p>
+
+<p class="psobremim">
+Cuidar da saúde emocional é um passo essencial para uma vida mais leve, consciente e equilibrada. Meu trabalho nasce do compromisso em oferecer um espaço acolhedor, ético e seguro, onde cada pessoa possa se sentir ouvida, respeitada e compreendida em sua singularidade.
+
+</p>
+
+
+<p class="psobremim">
+Busco constante aperfeiçoamento por meio de cursos, supervisão clínica e participação em eventos da área, garantindo um atendimento sempre atualizado e de qualidade.
+Atuo no acompanhamento de questões como ansiedade, inseguranças, conflitos emocionais e desafios do cotidiano, auxiliando no processo de autoconhecimento e na construção de uma vida com mais equilíbrio e sentido.
+
+</p>
+
+
+
+</div>
+</section>
+
+<section id="FIM">
+
+
+  <h1>Você não precisa enfrentar tudo sozinha</h1>
+  <p>Acolhimento, escuta e cuidado para mulheres que enfrentam ansiedade, <br> sobrecarga emocional e conflitos internos.</p>
+  
+ <form method="post" id="FContato" action="mailto:empresaX@gmail.com">
+  <input type="text" placeholder="Nome" required>
+  <input type="text" placeholder="Endereço" required>
+  <input type="tel" placeholder="Telefone" required>
+  <input type="email" placeholder="Email" required>
+  
+  <textarea placeholder="Mensagem"></textarea>
+  <button class="botaoFormulario">Enviar</button>
+</form>
+
+</section>
+
+
+<!-- WHATSAPP FLUTUANDO-->
+
+<a href="https://api.whatsapp.com/send?phone=5511975009514&text=Olá%2C%20gostaria%20de%20agendar%20uma%20consulta"
+
+
+target="_blank"
+style="position:fixed;bottom:20px;right:30px;">
+<svg enable-background="new 0 0 512 512" width="50" height="50" version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><path d="M256.064,0h-0.128l0,0C114.784,0,0,114.816,0,256c0,56,18.048,107.904,48.736,150.048l-31.904,95.104  l98.4-31.456C155.712,496.512,204,512,256.064,512C397.216,512,512,397.152,512,256S397.216,0,256.064,0z" fill="#0997b1"/><path d="m405.02 361.5c-6.176 17.44-30.688 31.904-50.24 36.128-13.376 2.848-30.848 5.12-89.664-19.264-75.232-31.168-123.68-107.62-127.46-112.58-3.616-4.96-30.4-40.48-30.4-77.216s18.656-54.624 26.176-62.304c6.176-6.304 16.384-9.184 26.176-9.184 3.168 0 6.016 0.16 8.576 0.288 7.52 0.32 11.296 0.768 16.256 12.64 6.176 14.88 21.216 51.616 23.008 55.392 1.824 3.776 3.648 8.896 1.088 13.856-2.4 5.12-4.512 7.392-8.288 11.744s-7.36 7.68-11.136 12.352c-3.456 4.064-7.36 8.416-3.008 15.936 4.352 7.36 19.392 31.904 41.536 51.616 28.576 25.44 51.744 33.568 60.032 37.024 6.176 2.56 13.536 1.952 18.048-2.848 5.728-6.176 12.8-16.416 20-26.496 5.12-7.232 11.584-8.128 18.368-5.568 6.912 2.4 43.488 20.48 51.008 24.224 7.52 3.776 12.48 5.568 14.304 8.736 1.792 3.168 1.792 18.048-4.384 35.52z" fill="#ffffff"/></svg>
+</a>
+
+</div>
+
+
+<!-- JS -->
+
+
+<script>
+const menu = document.getElementById("menu");
+const hamburger = document.querySelector(".hamburger");
+
+// ABRIR / FECHAR
+hamburger.addEventListener("click", function (e) {
+  e.stopPropagation();
+  menu.classList.toggle("ativo");
+});
+
+// NÃO FECHAR AO CLICAR NO MENU
+menu.addEventListener("click", function (e) {
+  e.stopPropagation();
+});
+
+// FECHAR AO CLICAR FORA
+document.addEventListener("click", function (e) {
+  if (!menu.contains(e.target) && !hamburger.contains(e.target)) {
+    menu.classList.remove("ativo");
+  }
+});
+
+// FECHAR AO ROLAR
+window.addEventListener("scroll", function () {
+  menu.classList.remove("ativo");
+});
+</script>
+
+
+
+
+</body>
+</html>
