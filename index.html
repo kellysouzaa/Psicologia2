@@ -49,12 +49,13 @@ background:#f3f3f3;
   align-items:center;
   justify-content:space-between;
   padding:0px 5%;
-  background-color:#30b8b8;
+  background-color:#411c80;
   
   padding-top: 10px;
   position:sticky; /*fica fixo*/
   top:0;
   z-index:1000;
+  
   
   
   
@@ -78,7 +79,7 @@ section{
   display:flex;
   gap:30px;
   list-style:none;
-  font-family: 'Montserrat', 'Playfair Display', serif;
+  
 }
  
 
@@ -90,7 +91,8 @@ section{
   position:relative;
   padding:5px 0;
   transition:.3s;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
+   font-family: 'Montserrat', 'Playfair Display', serif;
   
 }
 
@@ -101,12 +103,12 @@ section{
   bottom:-5px;
   width:0;
   height:3px;
-  background-color: #00fefe;
+  background-color: #fbca03;
   transition:.4s;
   border-radius:10px;
 }
 
-.menu a:hover{ color:#00fefe; }
+.menu a:hover{ color:#fbca03; }
 .menu a:hover::after{ width:100%; }
 
 
@@ -129,8 +131,6 @@ section{
   flex-wrap:wrap;
   justify-content:center;
   gap:0px;
- 
-  
   
 }
 .essencia{
@@ -138,22 +138,24 @@ section{
   
 }
 
+
+
 .boxcard{
   width:22%;
-  height:340px;
+  height:auto;
   min-width:260px;
   background-color: #ffffff;
-  border-radius:20px;
+  border-radius:30px;
   padding:1%;
   margin: 1%;
-  box-shadow:0 2px 10px rgba(0,0,0,.2);
+  box-shadow:0 2px 50px rgba(0,0,0,.2);
   text-align: center;
 }
 
 .tamanhoimg{
   width:20%;
   height:auto;
-  border-radius:15px;
+  
 }
 
 h1{
@@ -194,7 +196,36 @@ p{
    padding-bottom: 1%;
 
  }
- 
+
+ #ATENDIMENTO{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:0px;
+  background-color: #e9e6e6;
+  
+}
+
+.boxcardatendimento{
+  width:22%;
+  height:auto;
+  min-width:260px;
+  background-color: #ffffff;
+  border-radius:20px;
+  padding:1%;
+  margin: 1%;
+  box-shadow:0 2px 10px rgba(0,0,0,.2);
+  
+  
+
+}
+
+
+
+.tamanhoimgatendimento{
+width: 100%;
+border-radius: 30px;
+}
 
 
 
@@ -245,7 +276,7 @@ input, textarea{
 }
 
 .botaoFormulario{
-  background:#0997b1;
+  background:#411c80;
   color:white;
   width:30%;
   padding:10px;
@@ -289,7 +320,7 @@ input, textarea{
   color: #000000;
   background-color: rgb(255, 255, 255);
  border-style: groove;
- border-color:#17dbdb
+ border-color:#e6af09
 }
 
 
@@ -348,6 +379,9 @@ input, textarea{
   
 }
 
+hr{
+  width: 100%;
+}
 /* FINALIZA AQUI */
 
 /* botao com florzinha
@@ -372,6 +406,8 @@ input, textarea{
 
 @media (max-width:768px){
 
+
+
   .menu ul{
     flex-direction:column;
     gap:10px;
@@ -386,6 +422,21 @@ input, textarea{
      margin: 5%;
        
     
+    }
+
+    .boxcardatendimento{
+     width:90%;
+     height: auto;
+     padding:5%;
+     margin: 3%;
+
+       
+    
+    }
+
+    .tamanhoimgatendimento{
+    width: 100%;
+    border-radius: 30px;
     }
 
   #MEIO{ flex-direction:column; }
@@ -428,7 +479,7 @@ input, textarea{
     right: 0;
     width: 100%;
     display: none;
-    background-color:#30b8b8;
+    background-color:#411c80;
     z-index: 1000;
     /* opacity: 0.5; */
     width: 100%;
@@ -486,10 +537,11 @@ input, textarea{
 
   <div class="menu" id="menu">
     <ul>
-      <li><a href="#COMECO" class="fa-solid fa-house"> &nbsp;Home  </a></li>
-      <li><a href="#TRATAMENTOS" class="fa-solid fa-heart"> &nbsp;Especialidades  </a></li>
-      <li><a href="#MEIO" class="fa-solid fa-user"> &nbsp;Sobre mim</a></li>
-      <li><a href="#FIM" class="fa-solid fa-comment"> &nbsp;Contato</a></li>
+      <li><a href="#COMECO" > Home   </a></li>
+      <li><a href="#TRATAMENTOS" > Especialidades  </a></li>
+      <li><a href="#ATENDIMENTO" >Atendimento  </a></li>
+      <li><a href="#MEIO" >Sobre mim</a></li>
+      <li><a href="#FIM"> Contato</a></li>
 
      
 
@@ -498,9 +550,6 @@ input, textarea{
   </div>
   
 </div>
-
-
-
 
 
 
@@ -523,70 +572,127 @@ input, textarea{
 
  <section id="TRATAMENTOS">
 
-<div class="boxcard zoom">
-  <img src="IMAGENS/PANICOICONE.png" class="tamanhoimg" alt="ilustração de crise de pânico">
-  <h1>Crise de Pânico</h1>
-  <p>Uma sensação intensa de medo que surge de repente, com sintomas físicos e emocionais. </p>
-</div>
+      <div class="boxcard zoom">
+        <img src="IMAGENS/PANICOICONE.png" class="tamanhoimg" alt="ilustração de crise de pânico">
+   
+        <h1>Crise de Pânico</h1>
+        <p>Uma sensação intensa de medo que surge de repente, com sintomas físicos e emocionais. </p>
+      </div>
 
-<div class="boxcard zoom">
-  <img src="IMAGENS/DEPRESSAOICONE.png" class="tamanhoimg" alt="Ilustração de depressão">
-  <h1>Depressão</h1>
-  <p>Mais do que tristeza, é um cansaço emocional.  Com acolhimento e apoio, é possível reencontrar sentido e leveza</p>
-</div>
+      <div class="boxcard zoom">
+        <img src="IMAGENS/DEPRESSAOICONE.png" class="tamanhoimg" alt="Ilustração de depressão">
+        <h1>Depressão</h1>
+        <p>Mais do que tristeza, é um cansaço emocional.  Com acolhimento e apoio, é possível reencontrar sentido e leveza</p>
+      </div>
 
-<div class="boxcard zoom">
-  <img src="IMAGENS/ANSIEDADEICONE.png" class="tamanhoimg" alt="Ilustraçao de ansiedade">
-  <h1>Ansiedade</h1>
-  <p>Uma inquietação constante que pode causar preocupação excessiva e tensão. Com apoio adequado, é possível encontrar calma </p>
-</div>
+      <div class="boxcard zoom">
+        <img src="IMAGENS/ANSIEDADEICONE.png" class="tamanhoimg" alt="Ilustraçao de ansiedade">
+        <h1>Ansiedade</h1>
+        <p>Uma inquietação constante que pode causar preocupação excessiva e tensão. Com apoio adequado, é possível encontrar calma </p>
+      </div>
 
- <div class="boxcard zoom">
-               
-  <img src="IMAGENS/AUTOESTIMAICONE.png"  class="tamanhoimg" alt="Ilustração de relacionamento">
-   <h1>Autoestima</h1>
-   <p> Conflitos, inseguranças e dificuldades na comunicação são mais comuns do que parecem, mas não precisam ser permanentes</p>
-</div>
+      <div class="boxcard zoom">
+                    
+        <img src="IMAGENS/AUTOESTIMAICONE.png"  class="tamanhoimg" alt="Ilustração de relacionamento">
+        <h1>Autoestima</h1>
+        <p> Conflitos, inseguranças e dificuldades na comunicação são mais comuns do que parecem, mas não precisam ser permanentes</p>
+      </div>
 
-<!-- segundo bloco -->
+      <!-- segundo bloco -->
 
- <div class="boxcard zoom">
-               
-  <img src="IMAGENS/BURNOUTICONE.png"  class="tamanhoimg" alt="Ilustração de relacionamento">
-   <h1>Burnout</h1>
-   <p> esgotamento profundo, emocional e mental, causado por excesso de demandas e falta de cuidado consigo mesma</p>
-</div>
+      <div class="boxcard zoom">
+                    
+        <img src="IMAGENS/BURNOUTICONE.png"  class="tamanhoimg" alt="Ilustração de relacionamento">
+        <h1>Burnout</h1>
+        <p> esgotamento profundo, emocional e mental, causado por excesso de demandas e falta de cuidado consigo mesma</p>
+      </div>
 
- <div class="boxcard zoom">
-               
-  <img src="IMAGENS/ESTRESSICONE.png"  class="tamanhoimg" alt="Ilustração de relacionamento">
-   <h1>Estresse</h1>
-   <p> 
-    Resposta  do organismo diante de pressões do dia a dia. Mas, quando se torna constante, pode afetar sua saúde emocional e física</p>
-</div>
+      <div class="boxcard zoom">
+                    
+        <img src="IMAGENS/ESTRESSICONE.png"  class="tamanhoimg" alt="Ilustração de relacionamento">
+        <h1>Estresse</h1>
+        <p> 
+          Resposta  do organismo diante de pressões do dia a dia. Mas, quando se torna constante, pode afetar sua saúde emocional e física</p>
+      </div>
 
- <div class="boxcard zoom">
-               
-  <img src="IMAGENS/FOBIAICONE.png"  class="tamanhoimg" alt="Ilustração de relacionamento">
-   <h1>Fobia</h1>
-   <p> Medo intenso e desproporcional diante de situações, que muitas vezes, não representam perigo real — mas são vividos como se fossem</p>
-</div>
+      <div class="boxcard zoom">
+                    
+        <img src="IMAGENS/FOBIAICONE.png"  class="tamanhoimg" alt="Ilustração de relacionamento">
+        <h1>Fobia</h1>
+        <p> Medo intenso e desproporcional diante de situações, que muitas vezes, não representam perigo real — mas são vividos como se fossem</p>
+      </div>
 
- <div class="boxcard zoom">
-               
-  <img src="IMAGENS/TERMINOICONE.png"  class="tamanhoimg" alt="Ilustração de relacionamento">
-   <h1>Término</h1>
-   <p>O término de um relacionamento pode despertar uma mistura intensa de emoções. Aprenda reconstruir sua própria história</p>
-</div>
+      <div class="boxcard zoom">
+                    
+        <img src="IMAGENS/TERMINOICONE.png"  class="tamanhoimg" alt="Ilustração de relacionamento">
+        <h1>Término</h1>
+        <p>O término de um relacionamento pode despertar uma mistura intensa de emoções. Aprenda reconstruir sua própria história</p>
+      </div>
 
 
 
 
 </section>
 
+
+
+
+
+ <section id="ATENDIMENTO">
+
+      <div class="boxcardatendimento">
+        <img src="IMAGENS/emgrupo.jpg" class="tamanhoimgatendimento" alt="">
+        <h1>Grupo</h1>
+        <p>
+          O atendimento que proporciona um ambiente de acolhimento, troca de experiências e desenvolvimento pessoal. </p>
+
+      </div>
+
+
+ 
+         <div class="boxcardatendimento">
+       <img src="IMAGENS/INDIVIDUAL.jpg" class="tamanhoimgatendimento" alt="">
+         <h1>Individual</h1>
+        <p> Um espaço acolhedor e seguro, voltado para o autoconhecimento, o fortalecimento emocional e o enfrentamento de desafios pessoais. </p>
+
+        
+      </div>
+
+           <div class="boxcardatendimento">
+             <img src="IMAGENS/FAMILIAR.jpg"class="tamanhoimgatendimento" alt="">
+      
+         <h1> Familiar</h1>
+
+        <p>
+          O atendimento familiar é um espaço terapêutico voltado para o cuidado das relações dentro da família.
+        </p>
+
+        
+      </div>
+
+           <div class="boxcardatendimento ">
+             <img src="IMAGENS/ONLINE.jpg" class="tamanhoimgatendimento" alt="">
+      
+         <h1>  Online</h1>
+        <p> Um espaço de escuta acolhedora e segura, permitindo que você cuide da sua saúde emocional com conforto e praticidade, de onde estiver.
+</p>
+
+        
+      </div>
+     
+
+      
+ 
+</section>
+
+
+
+
+ <!-- fim -->
+
 <section id="MEIO">
 <div class="boxfoto">
-<img src="IMAGENS/FOTOCATIA.png" class="tamanhofotopsiq" alt="Foto da psicóloga">
+<img src="IMAGENS/FOTOCATIA.png" class="tamanhoimgatendimento" alt="Foto da psicóloga">
 </div>
 
 <div class="boxtexto">
@@ -640,7 +746,7 @@ Atuo no acompanhamento de questões como ansiedade, inseguranças, conflitos emo
 
 target="_blank"
 style="position:fixed;bottom:20px;right:30px;">
-<svg enable-background="new 0 0 512 512" width="50" height="50" version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><path d="M256.064,0h-0.128l0,0C114.784,0,0,114.816,0,256c0,56,18.048,107.904,48.736,150.048l-31.904,95.104  l98.4-31.456C155.712,496.512,204,512,256.064,512C397.216,512,512,397.152,512,256S397.216,0,256.064,0z" fill="#0997b1"/><path d="m405.02 361.5c-6.176 17.44-30.688 31.904-50.24 36.128-13.376 2.848-30.848 5.12-89.664-19.264-75.232-31.168-123.68-107.62-127.46-112.58-3.616-4.96-30.4-40.48-30.4-77.216s18.656-54.624 26.176-62.304c6.176-6.304 16.384-9.184 26.176-9.184 3.168 0 6.016 0.16 8.576 0.288 7.52 0.32 11.296 0.768 16.256 12.64 6.176 14.88 21.216 51.616 23.008 55.392 1.824 3.776 3.648 8.896 1.088 13.856-2.4 5.12-4.512 7.392-8.288 11.744s-7.36 7.68-11.136 12.352c-3.456 4.064-7.36 8.416-3.008 15.936 4.352 7.36 19.392 31.904 41.536 51.616 28.576 25.44 51.744 33.568 60.032 37.024 6.176 2.56 13.536 1.952 18.048-2.848 5.728-6.176 12.8-16.416 20-26.496 5.12-7.232 11.584-8.128 18.368-5.568 6.912 2.4 43.488 20.48 51.008 24.224 7.52 3.776 12.48 5.568 14.304 8.736 1.792 3.168 1.792 18.048-4.384 35.52z" fill="#ffffff"/></svg>
+<svg enable-background="new 0 0 512 512" width="50" height="50" version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><path d="M256.064,0h-0.128l0,0C114.784,0,0,114.816,0,256c0,56,18.048,107.904,48.736,150.048l-31.904,95.104  l98.4-31.456C155.712,496.512,204,512,256.064,512C397.216,512,512,397.152,512,256S397.216,0,256.064,0z" fill="#fbca03"/><path d="m405.02 361.5c-6.176 17.44-30.688 31.904-50.24 36.128-13.376 2.848-30.848 5.12-89.664-19.264-75.232-31.168-123.68-107.62-127.46-112.58-3.616-4.96-30.4-40.48-30.4-77.216s18.656-54.624 26.176-62.304c6.176-6.304 16.384-9.184 26.176-9.184 3.168 0 6.016 0.16 8.576 0.288 7.52 0.32 11.296 0.768 16.256 12.64 6.176 14.88 21.216 51.616 23.008 55.392 1.824 3.776 3.648 8.896 1.088 13.856-2.4 5.12-4.512 7.392-8.288 11.744s-7.36 7.68-11.136 12.352c-3.456 4.064-7.36 8.416-3.008 15.936 4.352 7.36 19.392 31.904 41.536 51.616 28.576 25.44 51.744 33.568 60.032 37.024 6.176 2.56 13.536 1.952 18.048-2.848 5.728-6.176 12.8-16.416 20-26.496 5.12-7.232 11.584-8.128 18.368-5.568 6.912 2.4 43.488 20.48 51.008 24.224 7.52 3.776 12.48 5.568 14.304 8.736 1.792 3.168 1.792 18.048-4.384 35.52z" fill="#ffffff"/></svg>
 </a>
 
 </div>
