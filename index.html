@@ -38,7 +38,8 @@ html{
 
 .WRAPPER{
 width:100%;
-background:#cfc9c9;
+background:#ffffff;
+
  
 
 }
@@ -57,9 +58,6 @@ background:#cfc9c9;
   z-index:1000;
   box-shadow:0 2px 50px rgba(0,0,0,.2);
  
-
-   
-
 
 }
 
@@ -81,8 +79,6 @@ section{
   display:flex;
   gap:30px;
   list-style:none;
-  
-  
   
 }
  
@@ -108,12 +104,12 @@ section{
   bottom:-5px;
   width:0;
   height:3px;
-  background-color: #fba403;
+  background-color: #3eb0c0;
   transition:.4s;
   border-radius:10px;
 }
 
-.menu a:hover{ color:#fba403; }
+.menu a:hover{ color:#3eb0c0; }
 .menu a:hover::after{ width:100%;  }
 
 
@@ -151,7 +147,7 @@ section{
 
 .boxcard{
   width:22%;
-  height:auto;
+  height:300px;
   min-width:260px;
   background-color: #ffffff;
   border-radius:30px;
@@ -159,7 +155,7 @@ section{
   margin: 1%;
   box-shadow:0 2px 10px rgba(0,0,0,.2);
   text-align: center;
-  border-color: #e9e6e6;
+  
 }
 
 .tamanhoimg{ /*icones*/
@@ -211,27 +207,39 @@ p{
   display:flex;
   flex-wrap:wrap;
   justify-content:center;
+  align-items:start;
   gap:0px;
   background-color: #22afb7;
   
 }
 
 .boxtextotopo{ /*texto acima dos cards de atendimento*/
-  width: 100%;
-  padding-top: 50px;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  align-items:center;
+  width: 80%;
+  background-color:  #24bac2;;
+  padding: 50px;
+  margin-bottom: 1%;
+  border-radius: 50px 0 50px 0;
+
+ 
+  box-shadow:0 2px 50px rgba(0,0,0,.2);
    
 }
 
 .boxcardatendimento{
-  width:22%;
-  height:auto;
+  width:20%;
+  height:500px;
   min-width:260px;
   background-color: #ffffff;
   border-radius:20px;
   padding:1%;
-  margin: 1%;
+  margin: 2%;
   box-shadow:0 2px 10px rgba(0,0,0,.2);
   text-align: center;
+ 
 
 }
 
@@ -252,7 +260,7 @@ border-radius: 20px;
   align-items:center;
   justify-content:center;
   gap:20px;
-  background:#ffffff
+  background:#f2efef;
   
  
 }
@@ -332,7 +340,7 @@ input, textarea{
   transform: scale(1.1); /* Aumenta 20% */
    background-color: rgb(255, 255, 255);
    border-style:groove;
-   border-color:#fba403;
+   border-color:#12cae2;
 }
 
 
@@ -464,7 +472,7 @@ hr{
   form{ 
     width:100%; 
     padding: 1%;
-    background-color: rgb(255, 255, 255);
+   background-color: rgb(232, 237, 239);
   }
 
 input, textarea{
@@ -472,9 +480,9 @@ input, textarea{
   margin-bottom:10px;
   padding:10px;
   border:none;
-  border-bottom:2px solid #888;
+  border-bottom:2px solid #cad1d1;
   border-radius:8px;
-  background-color: rgb(255, 255, 255);
+ background-color: rgb(255, 255, 255);
   color: #7c7c7c;
   
 }
@@ -555,11 +563,11 @@ input, textarea{
 
   <div class="menu" id="menu">
     <ul>
-      <li><a href="#COMECO" > Home   </a></li>
-      <li><a href="#TRATAMENTOS" > Especialidades  </a></li>
-      <li><a href="#ATENDIMENTO" >Atendimento  </a></li>
-      <li><a href="#MEIO" >Sobre mim</a></li>
-      <li><a href="#FIM"> Contato</a></li>
+      <li><a href="#COMECO" > HOME   </a></li>
+      <li><a href="#TRATAMENTOS" > ESPECIALIDADES  </a></li>
+      <li><a href="#ATENDIMENTO" >ATENDIMENTO  </a></li>
+      <li><a href="#MEIO" >SOBRE MIM</a></li>
+      <li><a href="#FIM"> CONTATO</a></li>
 
      
 
