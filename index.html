@@ -40,6 +40,7 @@ html{
 width:100%;
 background:#ffffff;
 
+
  
 
 }
@@ -134,13 +135,20 @@ section{
   gap:0px;
   
 }
-.essencia{ /*parte do texto que está sobre o banner*/
+
+ /*parte do texto que está sobre o banner*/
+.essencia{ 
+ 
   font-family: 'Montserrat', 'Playfair Display', serif;
   
-  
 }
-.texto{
-  color: rgb(255, 255, 255);
+
+/*parte do texto do fomulario*/
+.essencial{ 
+ 
+  font-family: 'Poppins', sans-serif;
+  color: #3eb0c0;
+  
 }
 
 
@@ -194,7 +202,7 @@ p{
  }
 
  .psobremim{
-    font-size:1.rem;
+   font-size:1.rem;
    font-family: 'Poppins', sans-serif;
    letter-spacing: 5%;
    line-height: 150%;
@@ -209,45 +217,49 @@ p{
   justify-content:center;
   align-items:start;
   gap:0px;
-  background-color: #22afb7;
+  background-image: url('./IMAGENS/FUNDO.jpg');
+  background-attachment: fixed;
+
   
 }
 
-.boxtextotopo{ /*texto acima dos cards de atendimento*/
+.boxtextotopo{ /*texto acima dos cards de atendimento. Caso queira colocar uma caixa com um texto. Eu retirei*/
   display:flex;
   flex-wrap:wrap;
   justify-content:center;
   align-items:center;
   width: 80%;
-  background-color:  #24bac2;;
+ 
   padding: 50px;
   margin-bottom: 1%;
   border-radius: 50px 0 50px 0;
-
- 
   box-shadow:0 2px 50px rgba(0,0,0,.2);
-   
+  
+  
 }
 
 .boxcardatendimento{
   width:20%;
-  height:500px;
+  height:610px;
   min-width:260px;
   background-color: #ffffff;
-  border-radius:20px;
+  opacity: 0.8;
+  border-radius:10px;
   padding:1%;
-  margin: 2%;
+  margin: 1%;
   box-shadow:0 2px 10px rgba(0,0,0,.2);
   text-align: center;
  
-
 }
 
 
 
+
+
+
 .tamanhoimgatendimento{
-width: 85%;
-border-radius: 20px;
+width: 95%;
+border-radius: 10px;
 
 }
 
@@ -260,7 +272,8 @@ border-radius: 20px;
   align-items:center;
   justify-content:center;
   gap:20px;
-  background:#f2efef;
+  
+ 
   
  
 }
@@ -274,13 +287,17 @@ form{
   width:50%;
   min-width:280px;
   margin:auto;
-  background-color: rgb(232, 237, 239);
-  padding:80px;
+  background-color: #ffffff;
+  padding: 40px;
   border-radius:20px;
   font-family: 'Poppins', sans-serif;
-  
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+ 
+
   
 
+ 
 }
 
 input, textarea{
@@ -290,22 +307,27 @@ input, textarea{
   border:none;
   border-bottom:2px solid #888;
   border-radius:8px;
-  background-color: rgb(235, 239, 239);
+ background-color: #ffffff;
   color: #000000;
   font-family: 'Poppins', sans-serif;
   
 }
 ::placeholder{
-  color: #000000;
+  color: #5c5c5c;
 }
 
-.botaoFormulario{
-  background:#5a595a;
-  color:white;
-  width:30%;
-  padding:10px;
-  border:none;
-  border-radius: 20px;
+
+/*ALTERANDO A COR DOS BOTORES DO FORMULARIO E SAIBA MAIS*/
+
+.btn-outline-warning{
+    color: #3eb0c0;
+    border-color: #3eb0c0;
+}
+
+.btn-outline-warning:hover{
+    background-color: #3eb0c0;
+    border-color: #3eb0c0;
+    color: #ffffff;
 }
 
 
@@ -332,22 +354,20 @@ input, textarea{
   border-color: #ffffff;
   color: #000000;
   background-color: #ffffff;
-  
+  border:none;
+  border-bottom:2px solid #09dde9;
+  border-top:2px solid #09dde9;
+  border-radius:20px 0 20px 0;
             
 }
 
 .zoom:hover {
   transform: scale(1.1); /* Aumenta 20% */
    background-color: rgb(255, 255, 255);
-   border-style:groove;
-   border-color:#12cae2;
+   /* border-style:groove;
+   border-color:#ffffff; */
+   
 }
-
-
-
-
-
-
 
 
 
@@ -392,7 +412,7 @@ input, textarea{
 
 }    
 
-.botaoconsulta{
+.botaoconsulta{ /*sobre o banner*/
   display:flex;
   flex-wrap:wrap;
   
@@ -408,7 +428,26 @@ hr{
 }
 
 
+/*fade in na chamada das paginas.*/
+
+.boxcard,
+.boxcardatendimento,
+form,
+.boxfoto,
+.boxtexto {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease;
+}
+
+.animar {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 /* FINALIZA AQUI */
+
+
 
 /* botao com florzinha
 
@@ -426,6 +465,7 @@ hr{
 }
 
 */
+
 
 
 /* MOBILE */
@@ -466,7 +506,7 @@ hr{
   justify-content:center;
   align-items:center;
   width: 100%;
-  background-color:  #24bac2;;
+  
   padding: 50px;
   margin-bottom: 1%;
   border-radius: 50px 0 50px 0;
@@ -491,7 +531,8 @@ hr{
   form{ 
     width:100%; 
     padding: 1%;
-   background-color: rgb(232, 237, 239);
+   background-color: rgb(255, 255, 255);
+   
   }
 
 input, textarea{
@@ -499,9 +540,9 @@ input, textarea{
   margin-bottom:10px;
   padding:10px;
   border:none;
-  border-bottom:2px solid #cad1d1;
+  border-bottom:2px solid #d2d1d1;
   border-radius:8px;
- background-color: rgb(255, 255, 255);
+  background-color: rgb(255, 255, 255);
   color: #7c7c7c;
   
 }
@@ -684,18 +725,22 @@ input, textarea{
 
 
  <section id="ATENDIMENTO">
-<div class="boxtextotopo">
-  <h1>CUIDAR DA SAÚDE EMOCIONAL É <span class="texto">ESSENCIAL</span></h1>
-<h2>
-  Veja as diferentes formas de atendimento e escolha a que melhor se encaixa no seu momento
-</h2>
-</div>
+
 
       <div class="boxcardatendimento">
         
         <img src="IMAGENS/emgrupo.png" class="tamanhoimgatendimento" alt="">
         <h1>GRUPO</h1>
-        <p>O atendimento que proporciona um ambiente de acolhimento, troca de experiências</p>  
+        <p>
+          Um espaço seguro para compartilhar experiências, fortalecer vínculos e desenvolver novas formas de lidar com desafios emocionais. No grupo, você encontra acolhimento, troca e crescimento junto a pessoas que vivenciam questões semelhantes
+
+        </p>  
+
+         <div class="botaoconsulta">
+          <a href="#"> <button type="button" class="btn btn-outline-warning">
+          Saiba mais
+          </button></a>
+        </div>
         
 
       </div>
@@ -706,8 +751,13 @@ input, textarea{
            <img src="IMAGENS/INDIVIDUAL.png" class="tamanhoimgatendimento" alt="">
            <h1>INDIVIDUAL</h1>
            <p>
-            Um espaço acolhedor e seguro, voltado para o autoconhecimento,
+           Um espaço acolhedor e confidencial para compreender suas emoções, fortalecer seu autoconhecimento e desenvolver recursos para enfrentar desafios com mais equilíbrio. Um cuidado personalizado voltado às suas necessidades.
            </p>
+            <div class="botaoconsulta">
+          <a href="#"> <button type="button" class="btn btn-outline-warning">
+          Saiba mais
+          </button></a>
+        </div>
       
         
       </div>
@@ -717,8 +767,13 @@ input, textarea{
              <img src="IMAGENS/FAMILIAR.png"class="tamanhoimgatendimento" alt="">
     <h1>FAMILIAR</h1>
              <p>
-      O atendimento familiar é um espaço terapêutico voltado para o cuidado das relações dentro da família
+     Um espaço de diálogo e acolhimento para fortalecer os vínculos familiares, promover a compreensão mútua e auxiliar na resolução de conflitos. O atendimento busca construir relações mais saudáveis, equilibradas e harmoniosas.
     </p>
+     <div class="botaoconsulta">
+          <a href="#"> <button type="button" class="btn btn-outline-warning">
+          Saiba mais
+          </button></a>
+        </div>
         
 
         
@@ -726,13 +781,20 @@ input, textarea{
         
       </div>
 
+      
+
            <div class="boxcardatendimento ">
                
              <img src="IMAGENS/ONLINE.png" class="tamanhoimgatendimento" alt="">
       <h1> ONLINE</h1>
              <p>
-        Um espaço de escuta acolhedora que permite que você cuide da sua saúde emocional com conforto e praticidade, de onde estiver.
+       Receba suporte psicológico de forma prática e segura, onde você estiver. As sessões online oferecem acolhimento, escuta qualificada e acompanhamento profissional, proporcionando cuidado emocional com conforto e privacidade.
       </p>
+       <div class="botaoconsulta">
+          <a href="#"> <button type="button" class="btn btn-outline-warning">
+          Saiba mais
+          </button></a>
+        </div>
       
         
 
@@ -782,7 +844,9 @@ Atuo no acompanhamento de questões como ansiedade, inseguranças, conflitos emo
 <section id="FIM">
 
 
-  <h1>Você não precisa enfrentar tudo sozinha</h1>
+  <h1>Você 
+    <span class="essencial">não precisa</span>
+     enfrentar tudo sozinha</h1>
   <p>Acolhimento, escuta e cuidado para mulheres que enfrentam ansiedade, <br> sobrecarga emocional e conflitos internos.</p>
   
  <form method="post" id="FContato" action="mailto:empresaX@gmail.com">
@@ -792,7 +856,7 @@ Atuo no acompanhamento de questões como ansiedade, inseguranças, conflitos emo
   <input type="email" placeholder="Email" required>
   
   <textarea placeholder="Mensagem"></textarea>
-  <button class="botaoFormulario">Enviar</button>
+  <button class="btn btn-outline-warning">Enviar</button>
 </form>
 
 </section>
@@ -811,10 +875,12 @@ style="position:fixed;bottom:20px;right:30px;">
 </div>
 
 
-<!-- JS -->
+<!-- JS -  hamburger e fade in das seçoes -->
 
 
 <script>
+
+  
 const menu = document.getElementById("menu");
 const hamburger = document.querySelector(".hamburger");
 
@@ -840,6 +906,29 @@ document.addEventListener("click", function (e) {
 window.addEventListener("scroll", function () {
   menu.classList.remove("ativo");
 });
+
+
+/*efeito na chamada das paginas*/
+
+
+const elementos = document.querySelectorAll(
+'.boxcard, .boxcardatendimento, form, .boxfoto, .boxtexto'
+);
+
+const observer = new IntersectionObserver((entries)=>{
+    entries.forEach(entry=>{
+        if(entry.isIntersecting){
+            entry.target.classList.add('animar');
+        } else {
+            entry.target.classList.remove('animar');
+        }
+    });
+},{ threshold:0.15 });
+
+elementos.forEach(el=>observer.observe(el));
+
+
+
 </script>
 
 
