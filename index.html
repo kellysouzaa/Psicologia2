@@ -211,7 +211,9 @@ p{
 
  }
 
- #ATENDIMENTO{
+ /*ATENDIMENTO*/
+
+ #ATENDIMENTO{ 
   display:flex;
   flex-wrap:wrap;
   justify-content:center;
@@ -219,24 +221,71 @@ p{
   gap:0px;
   background-image: url('./IMAGENS/FUNDO.jpg');
   background-attachment: fixed;
-
-  
+ 
 }
+
 
 .boxtextotopo{ /*texto acima dos cards de atendimento. Caso queira colocar uma caixa com um texto. Eu retirei*/
   display:flex;
   flex-wrap:wrap;
   justify-content:center;
   align-items:center;
-  width: 80%;
- 
+  width: 100%;
+  background-color: #332D8A;
   padding: 50px;
   margin-bottom: 1%;
-  border-radius: 50px 0 50px 0;
   box-shadow:0 2px 50px rgba(0,0,0,.2);
+  opacity: 0.6;
+  
+  
   
   
 }
+
+
+.fraseatendimento{
+  color: #ffffff;
+  text-align: left;
+  letter-spacing: 6px;
+  font-size: 1.8rem;
+  
+  
+}
+
+.fraseatendimento2{
+  color: #ffffff;
+  text-align: left;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.milhoes6{
+    font-size: 5rem;
+    color: #1e9fdb;
+    
+    
+   
+}
+
+
+.brasileiros{
+    font-size: 1.5rem;
+    color: #ffffff;
+}
+
+
+.referencia h2{
+    text-align: justify;
+    padding-left: 400px;
+    padding-top: 20px;
+    color: rgb(255, 255, 255);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    
+}
+
+
+
 
 .boxcardatendimento{
   width:20%;
@@ -251,9 +300,6 @@ p{
   text-align: center;
  
 }
-
-
-
 
 
 
@@ -509,12 +555,21 @@ form,
   
   padding: 50px;
   margin-bottom: 1%;
-  border-radius: 50px 0 50px 0;
-
- 
   box-shadow:0 2px 50px rgba(0,0,0,.2);
    
 }
+
+.milhoes6{
+    font-size: 2.8rem;
+    color: #1e9fdb;
+}
+
+
+.brasileiros{
+    font-size: 1rem;
+    color: #ffffff;
+}
+
 
 
 
@@ -598,6 +653,7 @@ input, textarea{
 }
 
 }
+
 /*TERMINA AQUI*/
 
 
@@ -686,7 +742,7 @@ input, textarea{
 
       <!-- segundo bloco -->
 
-      <div class="boxcard zoom">
+     <div class="boxcard zoom">
                     
         <img src="IMAGENS/BURNOUTICONE.png"  class="tamanhoimg" alt="Ilustração de relacionamento">
         <h1>Burnout</h1>
@@ -727,12 +783,24 @@ input, textarea{
  <section id="ATENDIMENTO">
 
 
+  
+  
+  <div class="boxtextotopo">
+ <h1 class="fraseatendimento">CADA JORNADA É ÚNICA! <br> 
+  <span class="milhoes6"> Milhões de mulheres</span> <br>
+  estão investindo em bem-estar emocional
+  
+</h1>
+
+  </div>
+
+
       <div class="boxcardatendimento">
         
         <img src="IMAGENS/emgrupo.png" class="tamanhoimgatendimento" alt="">
         <h1>GRUPO</h1>
         <p>
-          Um espaço seguro para compartilhar experiências, fortalecer vínculos e desenvolver novas formas de lidar com desafios emocionais. No grupo, você encontra acolhimento, troca e crescimento junto a pessoas que vivenciam questões semelhantes
+          Um espaço seguro para compartilhar experiências, fortalecer vínculos e desenvolver novas formas de lidar com desafios emocionais. 
 
         </p>  
 
@@ -751,7 +819,7 @@ input, textarea{
            <img src="IMAGENS/INDIVIDUAL.png" class="tamanhoimgatendimento" alt="">
            <h1>INDIVIDUAL</h1>
            <p>
-           Um espaço acolhedor e confidencial para compreender suas emoções, fortalecer seu autoconhecimento e desenvolver recursos para enfrentar desafios com mais equilíbrio. Um cuidado personalizado voltado às suas necessidades.
+           Um espaço acolhedor e confidencial para compreender suas emoções, fortalecer seu autoconhecimento e desenvolver recursos para enfrentar desafios com mais equilíbrio. 
            </p>
             <div class="botaoconsulta">
           <a href="#"> <button type="button" class="btn btn-outline-warning">
@@ -767,7 +835,7 @@ input, textarea{
              <img src="IMAGENS/FAMILIAR.png"class="tamanhoimgatendimento" alt="">
     <h1>FAMILIAR</h1>
              <p>
-     Um espaço de diálogo e acolhimento para fortalecer os vínculos familiares, promover a compreensão mútua e auxiliar na resolução de conflitos. O atendimento busca construir relações mais saudáveis, equilibradas e harmoniosas.
+     Um espaço de diálogo e acolhimento para fortalecer os vínculos familiares, promover a compreensão mútua e auxiliar na resolução de conflitos. 
     </p>
      <div class="botaoconsulta">
           <a href="#"> <button type="button" class="btn btn-outline-warning">
@@ -775,20 +843,17 @@ input, textarea{
           </button></a>
         </div>
         
-
-        
-
         
       </div>
 
       
 
-           <div class="boxcardatendimento ">
+     <div class="boxcardatendimento ">
                
              <img src="IMAGENS/ONLINE.png" class="tamanhoimgatendimento" alt="">
       <h1> ONLINE</h1>
              <p>
-       Receba suporte psicológico de forma prática e segura, onde você estiver. As sessões online oferecem acolhimento, escuta qualificada e acompanhamento profissional, proporcionando cuidado emocional com conforto e privacidade.
+       Suporte psicológico de forma prática e segura, onde você estiver. As sessões online oferecem acolhimento, escuta qualificada e acompanhamento profissional
       </p>
        <div class="botaoconsulta">
           <a href="#"> <button type="button" class="btn btn-outline-warning">
@@ -796,9 +861,6 @@ input, textarea{
           </button></a>
         </div>
       
-        
-
-        
       </div>
      
 
@@ -818,7 +880,9 @@ input, textarea{
 
 <div class="boxtexto">
 <h1>CÁTIA PEREIRA DE SOUZA</h1>
-<h2>Psicóloga e neuropsicóloga</h2>
+<h2>
+  Psicóloga e neuropsicóloga
+</h2>
 
 <p class="psobremim">
 Sou psicóloga formada em Psicologia, com atuação voltada ao cuidado da saúde mental feminina. Minha prática é fundamentada em Terapia Cognitivo-Comportamental (TCC), Psicanálise, Humanista, etc., sempre baseada em técnicas reconhecidas cientificamente e no respeito às necessidades individuais de cada paciente.
@@ -851,13 +915,26 @@ Atuo no acompanhamento de questões como ansiedade, inseguranças, conflitos emo
   
  <form method="post" id="FContato" action="mailto:empresaX@gmail.com">
   <input type="text" placeholder="Nome" required>
-  <input type="text" placeholder="Endereço" required>
+  
   <input type="tel" placeholder="Telefone" required>
   <input type="email" placeholder="Email" required>
+
+
   
   <textarea placeholder="Mensagem"></textarea>
+
+  
   <button class="btn btn-outline-warning">Enviar</button>
+
+  
 </form>
+
+
+
+
+
+
+
 
 </section>
 
