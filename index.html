@@ -8,6 +8,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Psicóloga especializada em ansiedade feminina, autoestima e relacionamentos. Atendimento online acolhedor e humanizado.">
 <title>Psicóloga para mulheres | Atendimento online</title>
+
 <link rel="shortcut icon" href="IMAGENS/favicon.ico" type="image/x-icon">
 <link rel="stylesheet" href="CSS/bootstrap.min.css">
 
@@ -140,15 +141,18 @@ section{
 .essencia{ 
  
   font-family: 'Montserrat', 'Playfair Display', serif;
+ 
+  
   
 }
 
 /*parte do texto do fomulario*/
 .essencial{ 
  
-  font-family: 'Poppins', sans-serif;
-  color: #3eb0c0;
-  
+ font-family: 'Montserrat', 'Playfair Display', serif;
+  color: #19cae1;
+  font-size: 1.8rem;
+  letter-spacing: 5px;
 }
 
 
@@ -236,8 +240,8 @@ p{
   margin-bottom: 1%;
   box-shadow:0 2px 50px rgba(0,0,0,.2);
   opacity: 0.6;
-  
-  
+   background-color: #280f54;
+  border-radius: 30px;
   
   
 }
@@ -328,13 +332,29 @@ border-radius: 10px;
 .boxtexto{ width:50%; min-width:280px; }
 .tamanhofotopsiq{ width:100%; }
 
+
+#FIM{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: top;
+    background-color: rgb(255, 255, 255);
+    background-image: url('./IMAGENS/FUNDO2.png');
+    
+}
+
+
+
+
 /* FORM */
 form{
   width:50%;
   min-width:280px;
   margin:auto;
+  margin-bottom: 30px;
   background-color: #ffffff;
-  padding: 40px;
+  padding:10px;
   border-radius:20px;
   font-family: 'Poppins', sans-serif;
   border-radius: 15px;
@@ -351,10 +371,10 @@ input, textarea{
   margin-bottom:10px;
   padding:10px;
   border:none;
-  border-bottom:2px solid #888;
+  border-bottom:2px solid #ccc7c7;
   border-radius:8px;
  background-color: #ffffff;
-  color: #000000;
+  color: #817c7c;
   font-family: 'Poppins', sans-serif;
   
 }
@@ -469,9 +489,78 @@ input, textarea{
   
 }
 
-hr{
-  width: 100%;
+/* RODAPE */
+
+
+footer{
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: center;
+    width: 100%;
+    background: #280f54;
+    color: #fff;
+    padding: 50px 30px 20px;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 10px;
 }
+
+.footer-container{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.footer-col{
+    flex: 1;
+    min-width: 250px;
+}
+
+.footer-col h3{
+    margin-bottom: 20px;
+    color: #1598c1;
+}
+
+.footer-col p,
+.footer-col a{
+    color: #e2d9f3;
+    text-decoration: none;
+    line-height: 1.5;
+    display: block;
+    text-align: justify;
+}
+
+.footer-col a:hover{
+    color: #1598c1;
+}
+
+.footer-col i{
+    color: #1598c1;
+    margin-right: 8px;
+}
+
+.footer-bottom{
+    
+    margin-top: 10px;
+  
+    padding-top: 20px;
+    text-align: left;
+    color: #2f3673;
+    font-size: 0.9rem;
+   
+    width: 100%;
+    
+    
+}
+
+
+
+
+
+
 
 
 /*fade in na chamada das paginas.*/
@@ -552,12 +641,16 @@ form,
   justify-content:center;
   align-items:center;
   width: 100%;
-  
-  padding: 50px;
-  margin-bottom: 1%;
-  box-shadow:0 2px 50px rgba(0,0,0,.2);
+  padding: 30px;
+  box-shadow:0 2px 50px rgba(0, 0, 0, 0.2);
+  font-size: 1rem;
+  background-color: #280f54;
+  border-radius: 30px;
    
+ 
 }
+
+
 
 .milhoes6{
     font-size: 2.8rem;
@@ -584,8 +677,8 @@ form,
   .boxfoto, .boxtexto{ width:100%; }
 
   form{ 
-    width:100%; 
-    padding: 1%;
+   width:100%; 
+   padding: 20px;
    background-color: rgb(255, 255, 255);
    
   }
@@ -650,6 +743,12 @@ input, textarea{
 
 .essencia{
   font-family: 'Playfair Display', serif;
+}
+
+.footer-bottom{
+  width: 100%;
+  padding: 10px;
+  background-color: #ffffff;
 }
 
 }
@@ -786,11 +885,11 @@ input, textarea{
   
   
   <div class="boxtextotopo">
- <h1 class="fraseatendimento">CADA JORNADA É ÚNICA! <br> 
-  <span class="milhoes6"> Milhões de mulheres</span> <br>
-  estão investindo em bem-estar emocional
-  
-</h1>
+      <h1 class="fraseatendimento">CADA JORNADA É ÚNICA! <br> 
+        <span class="milhoes6"> Milhões de mulheres</span> <br>
+        estão investindo em bem-estar emocional
+        
+      </h1>
 
   </div>
 
@@ -800,7 +899,7 @@ input, textarea{
         <img src="IMAGENS/emgrupo.png" class="tamanhoimgatendimento" alt="">
         <h1>GRUPO</h1>
         <p>
-          Um espaço seguro para compartilhar experiências, fortalecer vínculos e desenvolver novas formas de lidar com desafios emocionais. 
+          Um espaço seguro para compartilhar experiências
 
         </p>  
 
@@ -819,7 +918,7 @@ input, textarea{
            <img src="IMAGENS/INDIVIDUAL.png" class="tamanhoimgatendimento" alt="">
            <h1>INDIVIDUAL</h1>
            <p>
-           Um espaço acolhedor e confidencial para compreender suas emoções, fortalecer seu autoconhecimento e desenvolver recursos para enfrentar desafios com mais equilíbrio. 
+           Um espaço acolhedor e confidencial para compreender suas emoções 
            </p>
             <div class="botaoconsulta">
           <a href="#"> <button type="button" class="btn btn-outline-warning">
@@ -835,7 +934,7 @@ input, textarea{
              <img src="IMAGENS/FAMILIAR.png"class="tamanhoimgatendimento" alt="">
     <h1>FAMILIAR</h1>
              <p>
-     Um espaço de diálogo e acolhimento para fortalecer os vínculos familiares, promover a compreensão mútua e auxiliar na resolução de conflitos. 
+     Um espaço de diálogo e acolhimento para fortalecer os vínculos familiares,
     </p>
      <div class="botaoconsulta">
           <a href="#"> <button type="button" class="btn btn-outline-warning">
@@ -853,7 +952,7 @@ input, textarea{
              <img src="IMAGENS/ONLINE.png" class="tamanhoimgatendimento" alt="">
       <h1> ONLINE</h1>
              <p>
-       Suporte psicológico de forma prática e segura, onde você estiver. As sessões online oferecem acolhimento, escuta qualificada e acompanhamento profissional
+       Suporte psicológico de forma prática e segura, onde você estiver
       </p>
        <div class="botaoconsulta">
           <a href="#"> <button type="button" class="btn btn-outline-warning">
@@ -908,12 +1007,11 @@ Atuo no acompanhamento de questões como ansiedade, inseguranças, conflitos emo
 <section id="FIM">
 
 
-  <h1>Você 
-    <span class="essencial">não precisa</span>
-     enfrentar tudo sozinha</h1>
-  <p>Acolhimento, escuta e cuidado para mulheres que enfrentam ansiedade, <br> sobrecarga emocional e conflitos internos.</p>
+ 
+ 
   
  <form method="post" id="FContato" action="mailto:empresaX@gmail.com">
+   <h1>Você   <span class="essencial">NÃO PRECISA</span> <br> enfrentar tudo sozinha</h1>
   <input type="text" placeholder="Nome" required>
   
   <input type="tel" placeholder="Telefone" required>
@@ -927,16 +1025,58 @@ Atuo no acompanhamento de questões como ansiedade, inseguranças, conflitos emo
   <button class="btn btn-outline-warning">Enviar</button>
 
   
-</form>
+</form> 
+
+<footer>
+    <div class="footer-container">
+
+        <div class="footer-col">
+            <h3>Cátia Souza</h3>
+            <p>
+                Psicóloga dedicada ao acolhimento e desenvolvimento emocional
+                de mulheres em busca de autoconhecimento e paz interior.
+            </p>
+        </div>
+
+        <div class="footer-col">
+            <h3>Contato</h3>
+            <p><i class="fas fa-video"></i>  Online e Presencial</p>
+            <p><i class="fab fa-whatsapp"></i> (11) 97500-9514</p>
+            <p><i class="fas fa-envelope"></i> catiasouza@gmail.com</p>
+        </div>
+
+        <div class="footer-col">
+            <h3>Links Rápidos</h3>
+
+      
+      <li><a href="#TRATAMENTOS" > Especialidades  </a></li>
+      <li><a href="#ATENDIMENTO" >Atendimento  </a></li>
+      <li><a href="#MEIO" >Sobre mim</a></li>
+      
+        </div>
+
+    </div>
+
+   
 
 
+</footer>
+ 
+
+ 
 
 
-
-
-
+   <div class="footer-bottom essencia">
+        <p>
+            © 2026 | Todos os direitos reservados. <br>
+           
+            Design e desenvolvimento por Kelly Souza | <span class="essencial">Kairóz Digital</span> 
+        </p>
+    </div>
 
 </section>
+
+
 
 
 <!-- WHATSAPP FLUTUANDO-->
@@ -949,7 +1089,13 @@ style="position:fixed;bottom:20px;right:30px;">
 <svg enable-background="new 0 0 512 512" width="50" height="50" version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><path d="M256.064,0h-0.128l0,0C114.784,0,0,114.816,0,256c0,56,18.048,107.904,48.736,150.048l-31.904,95.104  l98.4-31.456C155.712,496.512,204,512,256.064,512C397.216,512,512,397.152,512,256S397.216,0,256.064,0z" fill="#25D366"/><path d="m405.02 361.5c-6.176 17.44-30.688 31.904-50.24 36.128-13.376 2.848-30.848 5.12-89.664-19.264-75.232-31.168-123.68-107.62-127.46-112.58-3.616-4.96-30.4-40.48-30.4-77.216s18.656-54.624 26.176-62.304c6.176-6.304 16.384-9.184 26.176-9.184 3.168 0 6.016 0.16 8.576 0.288 7.52 0.32 11.296 0.768 16.256 12.64 6.176 14.88 21.216 51.616 23.008 55.392 1.824 3.776 3.648 8.896 1.088 13.856-2.4 5.12-4.512 7.392-8.288 11.744s-7.36 7.68-11.136 12.352c-3.456 4.064-7.36 8.416-3.008 15.936 4.352 7.36 19.392 31.904 41.536 51.616 28.576 25.44 51.744 33.568 60.032 37.024 6.176 2.56 13.536 1.952 18.048-2.848 5.728-6.176 12.8-16.416 20-26.496 5.12-7.232 11.584-8.128 18.368-5.568 6.912 2.4 43.488 20.48 51.008 24.224 7.52 3.776 12.48 5.568 14.304 8.736 1.792 3.168 1.792 18.048-4.384 35.52z" fill="#ffffff"/></svg>
 </a>
 
+
+
+
+
+
 </div>
+
 
 
 <!-- JS -  hamburger e fade in das seçoes -->
